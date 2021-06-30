@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Thông tin thanh toán</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="jquery/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!--  begin header -->
+    <div class="container-fluid">
+        <div class="row" id="head_menu">
+            <img src="img/img_index/logo.png" id="logo" alt="logo">
+            <!-- <input class="search_query_top form-control input-lg input-search" size="65" type="search" name="query" value="" placeholder="Nhập sản phẩm.." aria-lable="Nhập sản phẩm..."> -->
+            <input type="text" id="ip_seach" name="" value="" placeholder="  Seach...">
+            <button type="button" class="button"><span class="glyphicon glyphicon-search"></span></button>
+            <ul class="" id="menu_head">
+                <a href="" title="">
+                    <li><i class="fas fa-cart-arrow-down"></i></li>
+                </a>
+                <a href="" title="">
+                    <li>ĐĂNG NHẬP</li>
+                </a>
+                <a href="" title="">
+                    <li>ĐĂNG KÝ</li>
+                </a>
+                <a href="" title="">
+                    <li>BLOG</li>
+                </a>
+                <li id="danhmuc">
+                    <div class="dropdown">
+                        <button class="dropbtn">MENU</button>
+                        <div class="dropdown-content">
+                            <div class="row" id="rong">
+                                <div class="col-md-12">
+                                    <a href="loaisp.html" class="dam">Trái cây</a>
+                                    <a href="#">Rau</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </li>
+                <a href="" title="">
+                    <li>TRANG CHỦ</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <!--  begin content -->
+    <style>
+        .container input {
+            margin: 15px;
+        }
+        
+        textarea {
+            margin: 15px;
+        }
+    </style>
+    <div id="anhfull1">
+        <div class="container">
+            <div class="row">
+                <h3>Thông tin giao hàng</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <input type="email" class="form-control has-error" id="email" placeholder="Email" onblur="kt_email()" />
+                    <span id="span1" style="color: red"></span>
+                    <input type="text" class="form-control" id="hoten" placeholder="Họ tên" onblur="kt_hoten()">
+                    <span id="span2" style="color: red"></span>
+                    <input type="text" class="form-control" id="sdt" placeholder="Số điện thoại" onblur="kt_sdt()">
+                    <span id="span3" style="color: red"></span>
+
+                    <textarea class="form-control" rows="3" placeholder="Ghi chú" style="width: 455px;"></textarea>
+                </div>
+                <div class="col-md-offset-1 col-md-5">
+                    <div class="row">
+                        <p class="ten">Chọn loại thẻ thanh toán</p>
+                    </div>
+                    <div class="row">
+                        <div id="div4">
+
+                            <input type="radio" name="rd1" value="Thẻ ATM (thẻ nội địa)">Thẻ ATM (thẻ nội địa)
+                            <br>
+                            <input type="radio" name="rd1" value="Thẻ ViSA">Thẻ quốc tế VISA,JBC,..
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top:50px;margin-bottom: 100px;">
+                        <div class="col-md-5">
+                            <a href="" title="">
+                                <button type="button" class="btn btn-primary"><i class="fas fa-chevron-left"></i>&nbsp;&nbsp;Quay lại giỏ hàng</button>
+                            </a>
+                        </div>
+                        <div class="col-md-5">
+                            <a href="" title="">
+                                <button type="button" class="btn btn-danger">Xác nhận đơn hàng</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- end content -->
+    <!-- FOOTER -->
+    <div class="container-fluid" id="footer">
+        <div class="col-md-3">
+            <p class="dam">LIÊN HỆ VỚI CHÚNG TÔI</p>
+            <br>
+            <br>
+            <p>Đại chỉ : Nguyễn Xá - Nhân Hòa - Mỹ Hào-Hưng Yên</p>
+            <br>
+            <p>Điện thoại:0983017991-01628470872</p>
+            <br>
+            <p>Email:thucphamsach@gmail.com</p>
+            <br>
+        </div>
+        <div class="col-md-3">
+            <p class="dam">THEO DÕI CHÚNG TÔI TẠI:
+                <br>
+                <br>
+                <br>
+            </p>
+            <a href="#" title=""><img src="img/icon/Facebook_icon.jpg" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#" title=""><img src="img/icon/gg.png" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#" title=""><img src="img/icon/line.png" alt=""></a>
+        </div>
+        <div class="col-md-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d15542.009841457872!2d105.84502538052715!3d21.16644447077979!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135010d49fb752d%3A0x5c845605d903a91e!2zNDcgS2jhu5FpIDdCIC0gxJDDtG5nIEFuaCwgTmd1ecOqbiBLaMOqLCDEkMO0bmcgQW5oLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e1!3m2!1svi!2s!4v1499497578469" width="500" height="245" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+        </div>
+    </div>
+</body>
+
+</html>

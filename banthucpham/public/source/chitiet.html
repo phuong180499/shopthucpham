@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Chi tiết</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="jquery/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!--  begin header -->
+    <div class="container-fluid">
+         <div class="row" id="head_menu">
+            <img src="img/img_index/logo.png" id="logo" alt="logo">
+            <!-- <input class="search_query_top form-control input-lg input-search" size="65" type="search" name="query" value="" placeholder="Nhập sản phẩm.." aria-lable="Nhập sản phẩm..."> -->
+            <input type="text" id="ip_seach" name="" value="" placeholder="  Seach...">
+            <button type="button" class="button"><span class="glyphicon glyphicon-search"></span></button>
+            <ul class="" id="menu_head">
+                <a href="giohang.html" title="">
+                    <li><i class="fas fa-cart-arrow-down"></i></li>
+                </a>
+                <a href="dangnhap.html" title="">
+                    <li>ĐĂNG NHẬP</li>
+                </a>
+                <a href="dangky.html" title="">
+                    <li>ĐĂNG KÝ</li>
+                </a>
+                <a href="gioithieu.html" title="">
+                    <li>BLOG</li>
+                </a>
+                <li id="danhmuc">
+                    <div class="dropdown">
+                        <button class="dropbtn">MENU</button>
+                        <div class="dropdown-content">
+                            <div class="row" id="rong">
+                                <div class="col-md-12">
+                                    <a href="loaisp.html" class="dam">Trái cây</a>
+                                    <a href="#">Rau</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </li>
+                <a href="index.html" title="">
+                    <li>TRANG CHỦ</li>
+                </a>
+            </ul>
+        </div>
+        <!--    end header -->
+    </div>
+    <!--   begin content -->
+    <div id="anhfull1">
+        <div class="container" id="chitiet">
+            <div class="col-md-1">
+                <div class="row">
+                    <img src="img/rau/can_tay.jpg" alt="">
+                </div>
+                <div class="row">
+                    <img src="img/rau/can_tay.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-5">
+                <img src="img/rau/cai_thao.png" alt="cai thảo" id="anhchitiet">
+            </div>
+            <div class="col-md-offset-1 col-md-4" id="thongtindongia">
+                <h3 style="font-weight: bold;">BƠ</h3>
+                <p>Tình trạng : Còn hàng</p>
+                <h3 class="gia" style="font-size: 20px">30.00đ/kg</h3>
+                <p> Số lượng:&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="button" value="-" onclick="giamsl1()" id="giam">
+                    <input type="textbox" value="1" id="soluong">
+                    <input type="button" value="+" id="tang" onclick="tangsl1()">
+                </p>
+                <br>
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal" id="ip"><i class="fas fa-cart-plus"></i>&nbsp;&nbsp;&nbsp;&nbsp;Thêm vào giỏ hàng</button>
+
+                <!-- Modal -->
+                <div id="myModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Đã thêm sản phẩm vào giỏ hàng</h4>
+                            </div>
+                            <div class="modal-body">
+                                <h3>Vịt om tương muối</h3>
+                                <p></p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="maginle">
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">THÔNG TIN CHI TIẾT</a></li>
+            <li><a data-toggle="tab" href="#menu1">ĐÁNH GIÁ</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <p>Thịt ba chỉ lợn đông lạnh, thịt lợn ba chỉ nhập khẩu từ Ba Lan được giết mổ theo quy trình công nghệ hiện đại, bảo quản đông lạnh ở nhiệt độ âm 18 độ C. Thịt lợn ba chỉ chúng tôi đang cung cấp có các loại chính, đó là thịt lợn ba chỉ rút xương, thịt lợn ba chỉ còn xương, thịt ba chỉ còn bì và thịt ba chỉ bỏ bì. Thịt ba chỉ có thể được coi là phần ngon nhất của thịt lợn. Thịt ba chỉ có đủ nạc, đủ mỡ và bì, ăn không quá khô và cũng ngấy mỡ nên rất dễ ăn, có thể chế biến thành nhiều món ăn ngon như: thịt ba chỉ nướng, thịt ba chỉ rang cháy cạnh, thịt kho...
+
+                </p>
+                <p class="center">
+                    <img src="anh/chi_tiet/Thit_lon/ba_chi_kho.jpg" alt=""><img src="anh/chi_tiet/Thit_lon/ba_chi_nuong.JPG" alt=""></p>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+                <div class="row">
+                    <div class="col-md-2">
+                        0 bình luận</div>
+                    <div class="col-md-1 col-md-offset-8">
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Sắp xếp theo
+                                <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Mới nhất</a></li>
+                                <li><a href="#">Cũ nhất</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-line"></div>
+                <!-- <input type="textbox" name="" id="anh_dai_dien"> --><img src="img/rau/rau_tan_o.jpg" id="anh_dai_dien" alt="">
+                <input type="text" id="binhluan" placeholder="   Thêm bình luận...">
+            </div>
+        </div>
+        <div class="container" id="can_le">
+            <div class="row">
+                <div class="col-md-3" id="padding">SẢN PHẨM LIÊN QUAN</div>
+                <div class="co-md-9" id="padding1"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3" style="padding: 0px"><img src="img/rau/ca_rot.jpg" alt="" id="anh_left"></div>
+                <div class="col-md-9" id="gom_nhom_sp">
+                    <div class="col-sm-6 col-md-3">
+                        <a href="" title="" id="text-decoration">
+                            <img src="img/rau/ca_rot.jpg">
+                            <div class="caption" id="div0">
+                                <p class="ten">Sản phẩm</p>
+                                <p class="gia">40000đ</p>
+                                <p class="chitiet">Chi tiết</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <a href="" title="" id="text-decoration">
+                            <img src="img/rau/ca_rot.jpg">
+                            <div class="caption" id="div0">
+                                <p class="ten">Sản phẩm</p>
+                                <p class="gia">40000đ</p>
+                                <p class="chitiet">Chi tiết</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <a href="" title="" id="text-decoration">
+                            <img src="img/rau/ca_rot.jpg">
+                            <div class="caption" id="div0">
+                                <p class="ten">Sản phẩm</p>
+                                <p class="gia">40000đ</p>
+                                <p class="chitiet">Chi tiết</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <a href="" title="" id="text-decoration">
+                            <img src="img/rau/ca_rot.jpg">
+                            <div class="caption" id="div0">
+                                <p class="ten">Sản phẩm</p>
+                                <p class="gia">40000đ</p>
+                                <p class="chitiet">Chi tiết</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  end content -->
+    <!-- FOOTER -->
+    <div class="container-fluid" id="footer">
+        <div class="col-md-3">
+            <p class="dam">LIÊN HỆ VỚI CHÚNG TÔI</p>
+            <br>
+            <br>
+            <p>Đại chỉ : Nguyễn Xá - Nhân Hòa - Mỹ Hào-Hưng Yên</p>
+            <br>
+            <p>Điện thoại:0983017991-01628470872</p>
+            <br>
+            <p>Email:thucphamsach@gmail.com</p>
+            <br>
+        </div>
+        <div class="col-md-3">
+            <p class="dam">THEO DÕI CHÚNG TÔI TẠI:
+                <br>
+                <br>
+                <br>
+            </p>
+            <a href="#" title=""><img src="img/icon/Facebook_icon.jpg" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#" title=""><img src="img/icon/gg.png" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#" title=""><img src="img/icon/line.png" alt=""></a>
+        </div>
+        <div class="col-md-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d15542.009841457872!2d105.84502538052715!3d21.16644447077979!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135010d49fb752d%3A0x5c845605d903a91e!2zNDcgS2jhu5FpIDdCIC0gxJDDtG5nIEFuaCwgTmd1ecOqbiBLaMOqLCDEkMO0bmcgQW5oLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e1!3m2!1svi!2s!4v1499497578469" width="500" height="245" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+        </div>
+    </div>
+</body>
+
+</html>

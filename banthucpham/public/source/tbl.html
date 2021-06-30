@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin_Bán thực phẩm</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/core.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/components.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+
+    <!-- Core JS files -->
+    <script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+    <script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+    <!-- /core JS files -->
+
+    <!-- Theme JS files -->
+    <script type="text/javascript" src="assets/js/plugins/tables/datatables/datatables.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/tables/datatables/extensions/autofill.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/tables/datatables/extensions/select.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/selects/select2.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/core/app.js"></script>
+    <script type="text/javascript" src="assets/js/pages/datatables_extension_autofill.js"></script>
+    <!-- /theme JS files -->
+
+    <link rel="stylesheet" type="text/css" href=".css">
+    <script src="javascript/javascript.js"></script>
+</head>
+
+<body>
+
+    <!-- Main navbar -->
+    <div class="navbar navbar-inverse">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html" id="navbar-brand">BON GROCER</a>
+
+            <ul class="nav navbar-nav visible-xs-block">
+                <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+                <li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="navbar-collapse collapse" id="navbar-mobile">
+            <ul class="nav navbar-nav">
+                <li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+            </ul>
+
+            <p class="navbar-text">
+                <span class="label bg-success">Online</span>
+            </p>
+
+            <div class="navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="icon-people"></i>
+                            <span class="visible-xs-inline-block position-right">Users</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-content">
+                            <div class="dropdown-content-heading">
+                                Users online
+                                <ul class="icons-list">
+                                    <li><a href="#"><i class="icon-gear"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <ul class="media-list dropdown-content-body width-300">
+                                <li class="media">
+                                    <div class="media-left"><img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></div>
+                                    <div class="media-body">
+                                        <a href="#" class="media-heading text-semibold">Jordana Ansley</a>
+                                        <span class="display-block text-muted text-size-small">Lead web developer</span>
+                                    </div>
+                                    <div class="media-right media-middle"><span class="status-mark border-success"></span></div>
+                                </li>
+                            </ul>
+
+                            <div class="dropdown-content-footer">
+                                <a href="#" data-popup="tooltip" title="All users"><i class="icon-menu display-block"></i></a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="icon-bubbles4"></i>
+                            <span class="visible-xs-inline-block position-right">Messages</span>
+                            <span class="badge bg-warning-400">2</span>
+                        </a>
+
+                        <div class="dropdown-menu dropdown-content width-350">
+                            <div class="dropdown-content-heading">
+                                Messages
+                                <ul class="icons-list">
+                                    <li><a href="#"><i class="icon-compose"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <ul class="media-list dropdown-content-body">
+                                <li class="media">
+                                    <div class="media-left">
+                                        <img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt="">
+                                        <span class="badge bg-danger-400 media-badge">5</span>
+                                    </div>
+
+                                    <div class="media-body">
+                                        <a href="#" class="media-heading">
+                                            <span class="text-semibold">James Alexander</span>
+                                            <span class="media-annotation pull-right">04:58</span>
+                                        </a>
+
+                                        <span class="text-muted">who knows, maybe that would be the best thing for me...</span>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="dropdown-content-footer">
+                                <a href="#" data-popup="tooltip" title="All messages"><i class="icon-menu display-block"></i></a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="dropdown dropdown-user">
+                        <a class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="assets/images/placeholder.jpg" alt="">
+                            <span>Linh Doan</span>
+                            <i class="caret"></i>
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#"><i class="icon-user-plus"></i> My profile</a></li>
+                            <li><a href="#"><i class="icon-coins"></i> My balance</a></li>
+                            <li><a href="#"><span class="badge bg-blue pull-right">58</span> <i class="icon-comment-discussion"></i> Messages</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#"><i class="icon-cog5"></i> Account settings</a></li>
+                            <li><a href="#"><i class="icon-switch2"></i> Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /main navbar -->
+
+    <!-- Page container -->
+    <div class="page-container">
+
+        <!-- Page content -->
+        <div class="page-content">
+
+            <!-- Main sidebar -->
+            <div class="sidebar sidebar-main">
+                <div class="sidebar-content">
+
+                    <!-- User menu -->
+                    <div class="sidebar-user">
+                        <div class="category-content">
+                            <div class="media">
+                                <a href="#" class="media-left"><img src="anh/icon/dai_dien.jpg" class="img-circle img-sm" alt=""></a>
+                                <div class="media-body">
+                                    <span class="media-heading text-semibold">Linh Doan</span>
+                                    <div class="text-size-mini text-muted">
+                                        <i class="icon-pin text-size-small"></i> &nbsp;An Thi,Hung Yen
+                                    </div>
+                                </div>
+
+                                <div class="media-right media-middle">
+                                    <ul class="icons-list">
+                                        <li>
+                                            <a href="#"><i class="icon-cog3"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /user menu -->
+
+                    <!-- Main navigation -->
+                    <div class="sidebar-category sidebar-category-visible">
+                        <div class="category-content no-padding">
+                            <ul class="navigation navigation-main navigation-accordion">
+
+                                <!-- Main -->
+                                <li class="navigation-header"><span>Main</span> <i class="icon-menu" title="Main pages"></i></li>
+                                <li><a href="admin.html"><i class="icon-home4"></i><span>Home</span></a></li>
+                                <li><a href="loaisp.html"><i class="fab fa-product-hunt"></i><span>Loại sản phẩm</span></a></li>
+                                <li>
+                                    <a href="#"><i class="fab fa-product-hunt"></i><span>Sản phẩm</span></a>
+                                    <ul>
+                                        <li><a href="table_rau.html"><i class="icon-chevron-right"></i><span>Rau xanh</span></a></li>
+                                        <li><a href="table_thitlon.html"><i class="icon-chevron-right"></i><span>Thịt lợn</span></a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="edit.html"><i class="fas fa-users"></i><span>Nhà cung cấp</span></a></li>
+                                <li><a href="kh.html"><i class="fas fa-users"></i><span>Quản lí khách hàng</span></a></li>
+                                <li><a href="kh.html"><i class="fas fa-user-lock"></i><span>Tài khoản</span></a></li>
+                                <li><a href="kh.html"><i class="far fa-comment-dots"></i><span>Phản hồi của khách hàng</span></a></li>
+                                <li><a href="nv.html"><i class="fas fa-user-tie"></i><span>Quản lí nhân viên</span></a></li>
+                                <li><a href="hdnhap.html"><i class="fas fa-file-invoice"></i><span>Hóa đơn nhập</span></a></li>
+                                <li><a href="hdban.html"><i class="fas fa-file-invoice" ></i><span>Hóa đơn bán</span></a></li>
+
+                                <li><a href="edit.html"><i class="far fa-newspaper"></i><span>Tin tức</span></a></li>
+                                <li><a href="edit.html"><i class="fab fa-slideshare"></i><span>Slide</span></a></li>
+                                <li><a href="edit.html"><i class="far fa-newspaper"></i><span>Quảng cáo</span></a></li>
+
+                            </ul>
+                            </li>
+                            <!-- /page kits -->
+
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /main navigation -->
+
+                </div>
+            </div>
+            <!-- /main sidebar -->
+
+            <!-- Main content -->
+            <div class="content-wrapper">
+
+                <!-- Page header -->
+                <div class="page-header page-header-default">
+                    <div class="page-header-content">
+                        <div class="page-title">
+                            <h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">THỰC PHẨM SẠCH</span></h4>
+                        </div>
+
+                        <div class="heading-elements">
+                            <div class="heading-btn-group">
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><i class="fas fa-plus"></i>&nbsp; &nbsp;&nbsp;&nbsp;Thêm mới</button>
+                                <!-- Modal -->
+                                <div id="myModal" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Thêm sản phẩm</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Some text in the modal.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-info" data-dismiss="modal"><i class="fas fa-download"></i>&nbsp;&nbsp;&nbsp;&nbsp;Save</button>
+                                                <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="myModal1" class="modal fade" role="dialog">
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Sửa sản phẩm</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Some text in the modal.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-info" data-dismiss="modal"><i class="fas fa-pencil-alt"></i>&nbsp;&nbsp;&nbsp;&nbsp;Save</button>
+                                        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="myModal2" class="modal fade" role="dialog">
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Xóa sản phẩm</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Bạn có chắc muốn xóa.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-info" data-dismiss="modal"><i class="fas fa-trash-alt"></i>&nbsp;&nbsp;&nbsp;&nbsp;Save</button>
+                                        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="breadcrumb-line">
+                        <ul class="breadcrumb">
+                            <li><a href="index.html"><i class="icon-home2 position-left"></i> Home</a></li>
+                            <li><a href="admin.html">Tables</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- /page header -->
+                <!-- Content area -->
+                <div class="content">
+
+                    <!-- Basic initialization -->
+                    <div class="panel panel-flat">
+                        <div class="panel-heading">
+                            <h5 class="panel-title">Danh sách các loại rau</h5>
+                            <div class="heading-elements">
+                                <ul class="icons-list">
+                                    <li>
+                                        <a data-action="collapse"></a>
+                                    </li>
+                                    <li>
+                                        <a data-action="reload"></a>
+                                    </li>
+                                    <li>
+                                        <a data-action="close"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <table class="table datatable-autofill-basic" id="tb_admin">
+                            <thead>
+                                <tr>
+                                    <th>STT</th>
+                                    <th>Mã loại sản phẩm</th>
+                                    <th>Mã sản phẩm</th>
+                                    <th>Ảnh sản phẩm</th>
+                                    <th>Tên sản phẩm</th>
+                                    <th>Giá</th>
+                                    <th>Tình trạng</th>
+                                    <th>Sửa</th>
+                                    <th>Xóa</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id="dong2">
+                                    <td>1</td>
+                                    <td>R</td>
+                                    <td>r01</td>
+                                    <td><img src="anh/rau/2018-04-14_104206.png" alt="" id="tdimg"></td>
+                                    <td>Cải thìa</td>
+                                    <td>15.000/kg</td>
+                                    <td>Còn</td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1" id="btn1" onclick="sua()">Sửa</button>
+
+                                        <!-- Modal -->
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal2" onclick="xoa()">Xóa</button>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="footer text-muted">
+                        &copy; 2015. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+                    </div>
+                    <!-- /footer -->
+                </div>
+                <!-- /content area -->
+
+            </div>
+            <!-- /main content -->
+
+        </div>
+        <!-- /page content -->
+
+    </div>
+    <!-- /page container -->
+
+</body>
+
+</html>
